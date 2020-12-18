@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Flance - Home for Freelancing
+        link(rel="icon", href="img/logos/icon.ico")
+        link(rel="stylesheet", href="fonts/pe-icon-7-stroke.css")
+        link(rel="stylesheet", href="css/animate.css")
+        link(rel="stylesheet", href="css/main.css")
+    body
+        .nav
+            .left-menu
+                img(src="img/logos/logo_small.png", alt="logo, flance")
+                a.left(href="") Find Freelancer
+                a.left(href="") Projects
+            .right-menu
+                a(href="") Sign Up
+                a(href="") Sign In
+        section.hero.left-side
+            .content
+                h1.wow.fadeIn(data-wow-duration="1s") We rank the best courses on the world web
+                p.wow.fadeIn(data-wow-duration="1.3s") The biggest database of online courses for you to filter through based on price, difficulty, certificate quality, and more.
+                h3.wow.fadeIn(data-wow-duration="1.6s") Searching for projects?
+                form.search.wow.fadeIn(action="search/", method="post", data-wow-duration="1.9s")
+                    input(type="text", placeholder="Start searching here...")
+                    button(type="submit")
+                        span.pe-7s-search
+                    .categories.wow.fadeIn(data-wow-duration="2.2s")
+                        .category
+                            input#design(type="radio", name="categories")
+                            label(for="design") Design
+                        .category
+                            input#web(type="radio", name="categories")
+                            label(for="web") Web
+                        .category
+                            input#ideas(type="radio", name="categories")
+                            label(for="ideas") Ideas
+                        .category
+                            input#another(type="radio", name="categories")
+                            label(for="another") Another
+            .section-image
+            .clearfix
+        section.projects.right-side
+            .intro
+                .content
+                    .icon.pe-7s-portfolio
+                    h2 Have a project to sold? We can help you!
+                    p You can sold here your projects to other customers. Only, you should insert images and information about your project. So, let's do that!
+                    a(href="/create/") Create a new project
+                .section-image
+                .clearfix
+        section.freelancers.left-side
+            .intro
+                .content
+                    .icon.pe-7s-speaker
+                    h2 Searching for freelancers? Search them here!
+                    p You can sold here your projects to other customers. Only, you should insert images and information about your project. So, let's do that!
+                    a(href="/search/") Search freelancers
+                .section-image
+                .clearfix
+    script(src="js/jquery.js")
+    script(src="js/wow.js")
+    script(src="js/main.js")
